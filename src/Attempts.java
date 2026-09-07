@@ -24,7 +24,7 @@ public class Attempts
                 break;
             }
             if(guess > target) System.out.println("Too High! ");
-            if(guess < target) System.out.println("Too low! ");
+            else System.out.println("Too low! ");
             System.out.println("Your Total Attempts : " + attempts);
 
         }
