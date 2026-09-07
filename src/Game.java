@@ -14,6 +14,7 @@ public class Game
 
             int totalAttempts = 0;
             Difficulty difficulty = new Difficulty();
+            Attempts attempts = new Attempts();
             while(true)
             {
                 System.out.print("Select the Difficulty : ");
@@ -26,9 +27,9 @@ public class Game
             }
             System.out.println("You Have Total " + totalAttempts + " Attempt");
             System.out.println("Enter Your Guess (0 - 100) ");
-            Attempts attempts = new Attempts(target, totalAttempts);
+            attempts.play(target,totalAttempts);
 
-            System.out.print("Do You Wanna Play Again (Y/N) :");
+            System.out.print("Do You Wanna Play Again (Y/N) : ");
             String ch = input.next();
             if(ch.equalsIgnoreCase("N"))
             {
